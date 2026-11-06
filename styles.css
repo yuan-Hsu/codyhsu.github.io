@@ -48,40 +48,24 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 nav { display: flex; flex-wrap: wrap; gap: .5rem 1.3rem; }
 nav a { color: var(--muted); text-decoration: none; }
 .hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(11rem, 30%);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
   margin-block: 2rem;
-  padding: clamp(1.25rem, 4vw, 3rem);
+  padding: clamp(1.25rem, 5vw, 4rem);
   border: 1px solid var(--line);
   background-image: linear-gradient(#90c6fa13 1px, transparent 1px),
     linear-gradient(90deg, #90c6fa13 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
-.identity {
-  display: flex;
-  align-items: center;
-  gap: .75rem;
-  margin-bottom: .9rem;
-}
-
-.identity .eyebrow { margin: 0; }
-
 .portrait {
-  flex: none;
-  width: 36px;
-  height: 36px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-}
-
-.portrait img {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
-  transform: scale(2.3);
-  transform-origin: 55% 28%;
+  width: min(100%, 20rem);
+  height: auto;
+  justify-self: center;
+  border: 1px solid var(--line);
 }
 
 .eyebrow, .stack {
@@ -149,6 +133,7 @@ p { color: var(--muted); }
 .site-footer { border-block-start: 1px solid var(--line); padding-block: 1.5rem; color: var(--muted); }
 
 @media (max-width: 44rem) {
-  .feature, .work-grid, .background-grid { grid-template-columns: 1fr; }
+  .hero, .feature, .work-grid, .background-grid { grid-template-columns: 1fr; }
+  .portrait { width: min(100%, 16rem); }
   .metric { border-left: 0; border-top: 1px solid var(--line); padding: 1rem 0 0; }
 }
