@@ -67,8 +67,8 @@ nav a { color: var(--muted); text-decoration: none; }
 
 .portrait {
   flex: none;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 36px;
+  height: 36px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 50%;
