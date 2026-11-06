@@ -1,10 +1,17 @@
-# Cody Hsu's personal website
+# Cody Hsu | Software Developer
 
-This portfolio uses plain HTML and CSS. Open `index.html` in a browser to preview it. No build step is required.
+Personal portfolio focused on SaaS customer account ownership, API and ERP integrations, and client-facing technical work from onboarding through production support.
 
-- Edit `index.html` to update the bio, projects, and contact links.
-- Edit the colors at the top of `styles.css` to change the theme.
-- Replace `cody-hsu-resume.pdf` to update the résumé download. Review the PDF for contact details before publishing.
-- Add project links when you have public repositories or demos to share.
+## Selected work
 
-The website files live in the repository root for GitHub Pages.
+- **Warehouse Inventory API** — Built and deployed ASP.NET Core APIs with SQL Server and Azure App Service, improving data-processing speed by 35%.
+- **SaaS Account Ownership** — Managed technical relationships across three customer accounts, covering requirements discovery, onboarding, training, and rollout validation.
+- **ERP Integration Support** — Diagnosed missing shipments by tracing logs and comparing API payloads, corrected field and format mismatches, and confirmed recovery with clients.
+
+## Local preview
+
+Open [`index.html`](index.html) in a browser. The portfolio uses plain HTML and CSS and requires no build step. Site content is in [`index.html`](index.html), styles are in [`styles.css`](styles.css), and the downloadable résumé is [`cody-hsu-resume.pdf`](cody-hsu-resume.pdf).
+
+## Hosting
+
+To publish the site from the repository root, select **Deploy from a branch**, **main**, and **/(root)** in the repository's [Pages settings](https://github.com/yuan-Hsu/codyhsu.github.io/settings/pages). After deployment, Pages settings displays the published URL.
