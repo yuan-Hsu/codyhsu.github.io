@@ -4,13 +4,13 @@ Personal portfolio focused on SaaS customer account ownership, API and ERP integ
 
 ## Selected work
 
-- **Warehouse Inventory API** — Built and deployed ASP.NET Core APIs with SQL Server and Azure App Service, improving data-processing speed by 35%.
 - **SaaS Account Ownership** — Managed technical relationships across three customer accounts, covering requirements discovery, onboarding, training, and rollout validation.
 - **ERP Integration Support** — Diagnosed missing shipments by tracing logs and comparing API payloads, corrected field and format mismatches, and confirmed recovery with clients.
+- **Warehouse Inventory API** — Built and deployed ASP.NET Core APIs with SQL Server and Azure App Service, improving data-processing speed by 35%.
 
 ## Local preview
 
-Open [`index.html`](index.html) in a browser. The portfolio uses plain HTML and CSS and requires no build step. Site content is in [`index.html`](index.html), styles are in [`styles.css`](styles.css), and the downloadable résumé is [`cody-hsu-resume.pdf`](cody-hsu-resume.pdf).
+Open [`index.html`](index.html) in a browser. The portfolio uses plain HTML and CSS and requires no build step. Site content is in [`index.html`](index.html), styles are in [`styles.css`](styles.css), and the downloadable Technical Account Manager résumé is [`cody-hsu-resume.pdf`](cody-hsu-resume.pdf).
 
 ## Hosting
 

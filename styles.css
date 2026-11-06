@@ -97,6 +97,7 @@ h2 { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 1.6rem; }
 h3 { font-size: clamp(1.25rem, 2.5vw, 1.7rem); }
 p { color: var(--muted); }
 .intro { max-width: 38rem; font-size: clamp(1.1rem, 2vw, 1.4rem); margin-block: 1.3rem 1.8rem; }
+.role-target { color: var(--ink); }
 .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.3rem; }
 .actions a { font-weight: 700; }
 
