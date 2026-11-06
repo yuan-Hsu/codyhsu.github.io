@@ -14,7 +14,7 @@
       <a class="wordmark" href="#main">Cody Hsu<span>.</span></a>
       <nav aria-label="Main navigation">
         <a href="#work">Work</a>
-        <a href="#background">Background</a>
+        <a href="#background">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -22,16 +22,20 @@
 
   <main id="main" class="wrap">
     <section class="hero" aria-labelledby="page-title">
-      <div>
+      <div class="identity">
+        <span class="portrait">
+          <img src="cody-hsu-portrait.webp" alt="" width="900" height="1200">
+        </span>
         <p class="eyebrow">Cody Hsu</p>
-        <h1 id="page-title">Software Developer</h1>
-        <p class="intro">I manage SaaS customer accounts, connect systems through APIs, and work directly with clients from onboarding through production support.</p>
-        <div class="actions">
-          <a class="button" href="#work">View selected work <span aria-hidden="true">↓</span></a>
-          <a href="cody-hsu-resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
-        </div>
       </div>
-      <img class="portrait" src="cody-hsu-portrait.webp" alt="Cody Hsu" width="900" height="1200">
+      <h1 id="page-title">Software Developer</h1>
+      <p class="intro">I build API and ERP integrations with C# and .NET, manage SaaS customer accounts, and work directly with clients from onboarding through production support.</p>
+      <div class="actions">
+        <a class="button" href="cody-hsu-resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
+        <a href="#work">Selected work</a>
+        <a href="https://www.linkedin.com/in/Li-Yuan-Hsu">LinkedIn</a>
+        <a href="https://github.com/yuan-Hsu">GitHub</a>
+      </div>
     </section>
 
     <section id="work" class="section" aria-labelledby="work-title">
@@ -41,7 +45,8 @@
         <div>
           <p class="eyebrow">Professional work · Sunrise Plastic Enterprise</p>
           <h3>Warehouse Inventory API</h3>
-          <p>I built and deployed ASP.NET Core APIs that connect warehouse inventory and plant receiving workflows to SQL Server. When production data stopped syncing completely, I traced the issue through logs and corrected pagination and field mappings.</p>
+          <p>I built and deployed ASP.NET Core APIs on Azure App Service to connect warehouse inventory and plant receiving workflows to SQL Server.</p>
+          <p>When records went missing during production syncs, I traced the logs and corrected pagination and field mappings. I wrote xUnit integration tests to verify API responses and database writes.</p>
           <p class="stack">C# / ASP.NET Core / EF Core / SQL Server / Azure App Service / xUnit</p>
         </div>
         <div class="metric"><strong>35%</strong><span>improvement in data-processing speed</span></div>
@@ -50,13 +55,13 @@
         <article>
           <p class="eyebrow">Professional work</p>
           <h3>SaaS Account Ownership</h3>
-          <p>I manage technical relationships with three external customer accounts across SaaS platforms. I gather requirements, build proofs of concept, train users, and validate rollout readiness with business teams.</p>
+          <p>I own the technical relationship for <strong>three customer accounts</strong> across SaaS platforms. I gather requirements, build proofs of concept, train users, and verify rollout readiness with business teams.</p>
           <p class="stack">Discovery / Onboarding / Training / Rollouts</p>
         </article>
         <article>
           <p class="eyebrow">Professional work</p>
           <h3>ERP Integration Support</h3>
-          <p>I investigated missing shipments using Datadog logs and by comparing API payloads. I corrected field and format mismatches and confirmed recovery with clients. I also write guides for authentication, payloads, and troubleshooting in Postman.</p>
+          <p>When shipments went missing after API submission, I compared source and destination payloads, checked Datadog logs, and fixed field and format mismatches. <strong>I confirmed recovery with clients.</strong></p>
           <p class="stack">REST APIs / Webhooks / Datadog / Postman</p>
         </article>
         <article>
