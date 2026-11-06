@@ -1,11 +1,11 @@
-# Cody Hsu | Software Developer
+# Cody Hsu | Technical Account Manager
 
 Personal portfolio focused on SaaS customer account ownership, API and ERP integrations, and client-facing technical work from onboarding through production support.
 
 ## Selected work
 
-- **SaaS Account Ownership** — Managed technical relationships across three customer accounts, covering requirements discovery, onboarding, training, and rollout validation.
-- **ERP Integration Support** — Diagnosed missing shipments by tracing logs and comparing API payloads, corrected field and format mismatches, and confirmed recovery with clients.
+- **Recovering Missing ERP Shipments** — Diagnosed missing shipments by tracing logs and comparing API payloads, corrected field and format mismatches, and confirmed recovery with clients.
+- **SaaS Account Ownership** — Owns technical relationships across three customer accounts, covering requirements discovery, onboarding, training, and rollout validation.
 - **Warehouse Inventory API** — Built and deployed ASP.NET Core APIs with SQL Server and Azure App Service, improving data-processing speed by 35%.
 
 ## Local preview
