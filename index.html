@@ -1,121 +1,197 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-type="service" data-radius="soft" data-buttons="block" data-motion>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cody Hsu manages SaaS customer accounts, builds API and ERP integrations, and supports clients from onboarding through production.">
-  <title>Cody Hsu | Technical Account Manager</title>
-  <link rel="stylesheet" href="styles.css?v=tam-case-study">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cody Hsu: technical account manager for SaaS customers</title>
+<meta name="description" content="Cody Hsu owns two SaaS logistics platforms as technical account manager: onboarding, SLA support, and ERP and API integrations.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cody Hsu: technical account manager for SaaS customers">
+<meta property="og:description" content="Onboarding, SLA support, and ERP and API integrations for two SaaS logistics platforms.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
+<!-- <link rel="canonical" href="https://yuan-hsu.github.io/codyhsu.github.io/"> -->
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #ffffff; --p-surface: #f4f4f4; --p-ink: #111111; --p-muted: #6b6b6b;
+  --p-accent: #1a4be0; --p-accent-ink: #ffffff; --p-action: #1a4be0; --p-action-ink: #ffffff;
+  --p-inv-bg: #111111; --p-inv-surface: #1e1e1e; --p-inv-ink: #ffffff; --p-inv-muted: #9a9a9a;
+  --p-inv-accent: #ffffff; --p-inv-accent-ink: #111111; --p-inv-action: #ffffff; --p-inv-action-ink: #111111;
+  --font-display: "Onest", system-ui, sans-serif;
+  --font-text: "Onest", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.035em;
+  --display-tracking-xl: -0.04em;
+}
+</style>
+<link rel="stylesheet" href="assets/diagrams/diagram.css">
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="assets/backgrounds/backgrounds.js"></script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+<!-- page CSS: only inside a visual (the tool tiles in a card panel, the diagram panel's height) -->
+<style>
+  .panel { --ground-bg: var(--surface); }
+  #projects .panel { --p-h: 300px; }
+  #about .grid { margin-top: var(--s-9); }
+  #work .panel { --p-h: 520px; }
+  #work .dg { --dg-line: color-mix(in oklab, var(--dg-ink) 55%, transparent); --dg-w: 2px; }
+  .tools { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; }
+  .tools__item { display: grid; justify-items: center; gap: var(--s-3); }
+  @media (min-width: 640px) and (max-width: 1023px) { #work .panel { --p-h: 340px; } }
+  @media (max-width: 639px) { #projects .panel { --p-h: 112px; } #work .panel { --p-h: 200px; } #work .section-head p { display: none; } }
+</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="wordmark" href="#main">Cody Hsu<span>.</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#work">Work</a>
-        <a href="#background">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<!-- type: service (site-kind other)
+     deal: hero split, nav nav-split (no panel: one photograph), close the head row of close-word without the name (dealt close-photo, dealt again:
+     no second photograph), footer footer-columns, rhythm dark-band (#work), buttons block, mark arc, grounds none
+     palette white-link-blue (the second dealt: the first's magenta clashes with the portrait's orange sky), type onest
+     moments: word-highlight in #about (dealt photo-chapters and pinned-chapters, dealt again: no step photographs) -->
+
+<header class="nav nav--split">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top"><span class="mark" data-mark="arc" aria-hidden="true"></span>Cody Hsu</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item"><a class="nav__link" href="#about">About</a></div>
+      <div class="nav__item"><a class="nav__link" href="#work">Work</a></div>
+      <div class="nav__item"><a class="nav__link" href="#projects">Projects</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="mailto:xsw220150071@gmail.com">Email Cody</a>
     </div>
-  </header>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
 
-  <main id="main" class="wrap">
-    <section class="hero" aria-labelledby="page-title">
-      <div>
-        <p class="eyebrow">Cody Hsu</p>
-        <h1 id="page-title">Technical Account Manager</h1>
-        <p class="intro">I own technical relationships with SaaS customers, lead onboarding, and build API and ERP integrations. I work directly with clients to resolve production issues and verify fixes.</p>
-        <ul class="scope" aria-label="Account and onboarding scope">
-          <li><strong>3</strong> SaaS customer accounts</li>
-          <li><strong>~10</strong> users onboarded and trained monthly</li>
-          <li><strong>2</strong> application rollouts supported monthly</li>
+<main id="top">
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-5">
+        <h1 id="hero-h">Technical account manager, SaaS</h1>
+        <p class="hero__lead">I own 2 SaaS logistics platforms at Sunrise Plastic Enterprise, a Yard Management System and a container dispatch platform, as technical contact for external partners and five internal departments.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="mailto:xsw220150071@gmail.com">Email Cody</a><a class="btn btn--secondary" href="cody-hsu-resume.pdf" download>Download résumé</a></div>
+      </div>
+      <div class="hero__media span-6 start-7">
+        <img src="cody-hsu-portrait.webp" alt="Cody Hsu in a navy suit on a balcony at sunset" width="900" height="1200" style="--ly-pos: 50% 22%" fetchpriority="high" data-source="client" data-subject="Cody Hsu, portrait">
+      </div>
+    </div></div>
+  </section>
+
+  <!-- word-highlight: one statement of 12 to 40 words in its own section, one strong phrase in <strong> -->
+  <section class="section statement" id="about" data-moment="word-highlight" aria-label="About">
+    <div class="wrap">
+      <p class="t-label">Account work since July 2023</p>
+      <p class="mo-wh__text">I have onboarded and trained more than 80 external users, resolved over 600 support tickets within SLA and support 2 application rollouts a month. Most tickets close in <strong>one to two days</strong>.</p>
+      <div class="grid grid--top">
+        <div class="span-4 stack-2"><p class="t-card">Sunrise Plastic Enterprise</p><p>Technical Account Manager, July 2023 to present.</p></div>
+        <div class="span-4 stack-2"><p class="t-card">Texas A&amp;M University</p><p>Master of Computer Science, 2021 to 2023.</p></div>
+        <div class="span-4 stack-2"><p class="t-card">National Central University</p><p>B.S. in Computer Science and Information Engineering, 2017 to 2021.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- the dark band: the case study, text left, the one still diagram right -->
+  <section class="section ground-inverse" id="work" aria-labelledby="work-h">
+    <div class="wrap grid grid--top">
+      <div class="span-5">
+        <div class="section-head">
+          <h2 id="work-h">Support and incident resolution</h2>
+          <p>I reproduce defects, review Windows and Linux logs, and debug API requests in Postman.</p>
+        </div>
+        <ul class="rows">
+          <li><span class="rows__name">Restored service in 30 minutes</span><p>An outage hit 30 concurrent users. I deployed a workaround and rolled back the release.</p></li>
+          <li><span class="rows__name">Recovered missing shipment records</span><p>I compared source and destination payloads and fixed format mismatches.</p></li>
+          <li><span class="rows__name">Reduced recurring issues by 22%</span><p>A triage and escalation process ranks repeat issues by frequency.</p></li>
         </ul>
-        <div class="actions">
-          <a class="button" href="cody-hsu-resume.pdf" download>Download TAM résumé <span aria-hidden="true">↓</span></a>
-          <a href="#work">Selected work</a>
-          <a href="https://www.linkedin.com/in/Li-Yuan-Hsu">LinkedIn</a>
-          <a href="https://github.com/yuan-Hsu">GitHub</a>
-        </div>
       </div>
-      <img class="portrait" src="cody-hsu-portrait.webp" alt="Cody Hsu" width="320" height="427">
-    </section>
+      <div class="panel span-6 start-7">
+        <div class="dg" data-diagram><script type="application/json">{"layout":"free","ground":"none","motion":{"pulse":"none"},"alt":"A shipment record goes from the source system through the REST API to the ERP, with logs read at the API.","nodes":[{"id":"src","label":"Source system","icon":"ui:package","at":[0.16,0.36],"atCompact":[0.5,0.12]},{"id":"api","label":"REST API","icon":"ui:braces","at":[0.5,0.36],"atCompact":[0.5,0.4]},{"id":"erp","label":"ERP","icon":"ui:database","done":true,"at":[0.84,0.36],"atCompact":[0.27,0.76]},{"id":"logs","label":"Logs","icon":"ui:file-search","at":[0.5,0.76],"atCompact":[0.73,0.76]}],"edges":[{"from":"src","to":"api"},{"from":"api","to":"erp"},{"from":"api","to":"logs"}]}</script></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="work" class="section" aria-labelledby="work-title">
-      <p class="eyebrow">01 / Portfolio</p>
-      <h2 id="work-title">Selected work</h2>
-      <article class="feature">
-        <div>
-          <p class="eyebrow">Featured case study · Sunrise Plastic Enterprise</p>
-          <h3>Recovering missing ERP shipments</h3>
-          <p>Shipments were missing after API submission. I checked Datadog logs and compared payloads from the source and destination systems to isolate field and format mismatches.</p>
-          <p>I corrected the mappings and formats, tested multiple cases, and worked directly with clients to validate the fix.</p>
-          <p class="stack">ERP integrations / REST APIs / Datadog / Payload validation</p>
-        </div>
-        <aside class="outcome">
-          <p class="eyebrow">Outcome</p>
-          <p><strong>Clients confirmed shipment processing had recovered.</strong></p>
-        </aside>
-      </article>
-      <div class="work-grid">
-        <article>
-          <p class="eyebrow">Professional work</p>
-          <h3>SaaS Account Ownership</h3>
-          <p>I gather requirements, build proofs of concept, and work with business teams to validate rollout readiness. Before customer deployments, I verify environment settings, database connections, and API authentication.</p>
-          <p class="stack">Discovery / Onboarding / Training / Rollout readiness</p>
+  <section class="section" id="projects" aria-labelledby="projects-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="projects-h">Integrations and support tools</h2>
+      </div>
+      <div class="grid">
+        <article class="card card--row span-6" id="yms-erp">
+          <h3>Syncs the YMS with the in-house ERP</h3>
+          <p>A two-way REST API integration on ASP.NET Core, SQL Server and Azure. Data processing ran 35% faster.</p>
+          <div class="panel panel--flush">
+            <div class="tools" role="img" aria-label="C#, .NET and Azure">
+              <span class="tools__item"><span class="ic-tile ic-tile--72"><img class="ic" src="assets/icons/c-sharp.svg" alt="" width="36" height="40"></span><span class="t-label">C#</span></span>
+              <span class="tools__item"><span class="ic-tile ic-tile--72"><img class="ic" src="assets/icons/dotnet.svg" alt="" width="40" height="40"></span><span class="t-label">.NET</span></span>
+              <span class="tools__item"><span class="ic-tile ic-tile--72"><img class="ic" src="assets/icons/azure.svg" alt="" width="40" height="38"></span><span class="t-label">Azure</span></span>
+            </div>
+          </div>
         </article>
-        <article>
-          <p class="eyebrow">Professional work · Sunrise Plastic Enterprise</p>
-          <h3>Warehouse Inventory API</h3>
-          <p>I built and deployed ASP.NET Core APIs on Azure App Service to connect warehouse inventory and plant receiving workflows to SQL Server.</p>
-          <p>When records went missing during production syncs, I traced the logs and corrected pagination and field mappings. I wrote xUnit integration tests to verify API responses and database writes.</p>
-          <p><strong>35% improvement in data-processing speed.</strong></p>
-          <p class="stack">C# / ASP.NET Core / EF Core / SQL Server / Azure App Service / xUnit</p>
+        <article class="card card--row span-6" id="support-tools">
+          <h3>Tracks SLA tickets in Jira and Salesforce</h3>
+          <p>My API guides and FAQs, with Postman examples, let users troubleshoot integrations on their own.</p>
+          <div class="panel panel--flush">
+            <div class="tools" role="img" aria-label="Jira, Salesforce and Postman">
+              <span class="tools__item"><span class="ic-tile ic-tile--72"><img class="ic" src="assets/icons/jira.svg" alt="" width="40" height="40"></span><span class="t-label">Jira</span></span>
+              <span class="tools__item"><span class="ic-tile ic-tile--72"><img class="ic ic-land" src="assets/icons/salesforce.svg" alt="" width="40" height="28"></span><span class="t-label">Salesforce</span></span>
+              <span class="tools__item"><span class="ic-tile ic-tile--72"><img class="ic" src="assets/icons/postman.svg" alt="" width="40" height="40"></span><span class="t-label">Postman</span></span>
+            </div>
+          </div>
         </article>
       </div>
-      <details class="portfolio-project">
-        <summary>Additional project · Real-Time Data Pipeline</summary>
-        <article>
-          <p class="eyebrow">Personal portfolio project</p>
-          <h3>Real-Time Data Pipeline</h3>
-          <p>I built a portfolio pipeline for a workload of 10,000+ daily transaction records. Snowpipe and Pub/Sub ingest data from Google Cloud Storage into Snowflake. Snowflake Streams and Tasks process changes incrementally through Bronze, Silver, and Gold layers.</p>
-          <p class="stack">Python / SQL / Snowflake / Google Cloud</p>
-        </article>
-      </details>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <section id="background" class="section" aria-labelledby="background-title">
-      <p class="eyebrow">02 / Background</p>
-      <h2 id="background-title">Experience &amp; education</h2>
-      <div class="background-grid">
-        <div>
-          <h3>Sunrise Plastic Enterprise</h3>
-          <p><strong>Technical Account Manager</strong> · 2023–Present</p>
-          <p>I own technical relationships across three SaaS customer accounts, from discovery and onboarding to production support. I handle approximately 15 ERP and API tickets monthly under SLAs, with an average resolution time of one to two days.</p>
-          <p>I bring recurring support issues and customer feedback into development planning.</p>
-        </div>
-        <div>
-          <h3>Education</h3>
-          <p><strong>Texas A&amp;M University</strong> · 2021–2023<br>Master of Computer Science</p>
-          <p><strong>National Central University</strong> · 2017–2021<br>B.S. in Computer Science and Information Engineering</p>
-        </div>
+<footer class="footer closing g2m" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--word">
+      <div class="section-head--split">
+        <div><h2 id="close-h">Technical account manager roles</h2><p class="t-lead">I am open to Technical Account Manager opportunities. Email reaches me fastest.</p></div>
+        <a class="btn btn--primary" href="mailto:xsw220150071@gmail.com">Email Cody<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
       </div>
-    </section>
-
-    <section id="contact" class="section contact" aria-labelledby="contact-title">
-      <p class="eyebrow">03 / Contact</p>
-      <h2 id="contact-title">Get in touch</h2>
-      <p>For Technical Account Manager opportunities, reach me by email or on LinkedIn.</p>
-      <div class="actions">
-        <a class="button" href="mailto:xsw220150071@gmail.com">Email me</a>
-        <a href="https://www.linkedin.com/in/Li-Yuan-Hsu">LinkedIn <span aria-hidden="true">↗</span></a>
-        <a href="https://github.com/yuan-Hsu">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="nav__logo" href="#top"><span class="mark" data-mark="arc" aria-hidden="true"></span>Cody Hsu</a>
+          <p class="footer__lede">Technical account manager for SaaS customers.</p>
+        </div>
+        <div class="span-2 footer__col"><h3>Work</h3><ul><li><a href="#work">Incident resolution</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Projects</h3><ul><li><a href="#yms-erp">YMS and ERP sync</a></li><li><a href="#support-tools">Support tools</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>About</h3><ul><li><a href="#about">Roles and education</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Contact</h3><ul><li><a href="https://www.linkedin.com/in/Li-Yuan-Hsu">LinkedIn</a></li><li><a href="https://github.com/yuan-Hsu">GitHub</a></li></ul></div>
       </div>
-    </section>
-  </main>
+      <div class="footer__legal">
+        <span>&copy; 2026 Cody Hsu</span>
+        <span class="t-label muted">Product names and logos are trademarks of their owners</span>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <footer class="site-footer">
-    <div class="wrap">Cody Hsu</div>
-  </footer>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+<script type="module" src="assets/diagrams/mount.js"></script>
 </body>
 </html>
